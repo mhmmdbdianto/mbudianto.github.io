@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budianto</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body data-soy="scroll" data-target="#wrapper">
+	<header>
+		<div class="logo-container">
+			<img src="assets/LOGO.png" alt="logo" width="60rem">
+		</div>
+		<nav>
+			<ul class="nav-links" id="navbar">
+				<li><a href="#one" class="nav-link">Tentang Saya</a></li>
+				<li><a href="#two" class="nav-link">Hobby</a></li>
+				<li><a href="#three" class="nav-link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main-container">
+		<div class="container">
+
+			<div class="wrapper">
+				<div class="circle-wrapper" id="wrapper">
+					<a href="#one">
+						<div class="circle one"></div>
+					</a>
+					<a href="#two">
+						<div class="circle two"></div>
+					</a>
+					<a href="#three">
+						<div class="circle three"></div>
+					</a>
+				</div>
+			</div>
+
+			<section id="one"class="home">
+				<div class="text-introduction">
+					<h1>Hai!</h1>
+					<h1>Saya Muhammad Budianto</h1>
+					<p>Saat ini Saya adalah seorang mahasiswa Indonesia di Universitas Mercubuana 
+					kranggan, bertepat di jakarta pada saat tanggal 27 oktober tahun 2001 saya 
+					pun lahir.</p>
+					<div class="cta">
+						<button class="cta-send"><a href="mailto:budianto2710@gmail.com">Email Me</a></button>
+					</div>
+				</div>
+				<div class="cover animate-bottom">
+					<img src="assets/BUDI.png" alt="budianto">
+				</div>
+				<img src="assets/dots.png" alt="dots" class="dots">
+				<img src="assets/wave-background.png" alt="" class="wave">
+			</section>
+
+			<section id="two"class="hobby">
+				<div class="logo_hobby">
+					<img src="assets/LOGO.png" alt="logo" width="60rem">
+				</div>
+				<div class="myhobby animate-left">
+					<img src="assets/berenang.png" alt="berenang">
+				</div>
+				<div class="text">	
+					<h1>Berenang</h1>
+					<div></div>
+					<p>saya sangan menyukai sekalli berenang
+					karena selain menyehatkan juga menyenangkan
+					apalagi ketika saya berenang dengan teman-teman
+					mungkin bisa dibilang saya adalah manusia air
+					karena  dalam seminggu saya jadwalkan
+					seminggu berenang 5X, apalagi ketika waktu SMK
+					dalam seminggu bisa 6X berenang dan terutama
+					saat pelajaran olahraga praktek berenang
+					sudah pasti saya yang sangat anstusias</p>
+				</div>
+				<img src="assets/background-item-1.png" alt="blobs" class="blobs_1">
+				<img src="assets/background-item-2.png" alt="blobs" class="blobs_2">
+				<img src="assets/background-item-3.png" alt="blobs" class="blobs_3">
+			</section>
+
+			<section id="three"class="kontak">
+				<div class="logo_kontak">
+					<img src="assets/LOGO.png" alt="logo" width="60rem">
+				</div>
+				<div class="text_contact">
+					<h1>Kontak saya</h1>
+					<p>Jika anda Membutuhkan saya untuk mendengar cerita
+					anda atau menjadi teman curhat dan memperbaiki jaringan
+					anda dapat menghubungi saya</p>
+					<div class="cta">
+						<button class="cta-contact"><a href="https://wa.me/085157485856">Hubungi saya</a></button>
+					</div>
+					<div class="icons">
+						<a href="https://www.instagram.com/mhmmdbdianto/" class="fab fa-instagram fa-3x icon"></a>
+						<a href="https://t.me/mhmmdbdianto" class="fab fa-telegram-plane fa-3x icon"></a>
+						<a href="https://wa.me/085157485856" class="fab fa-whatsapp fa-3x icon" target="_blank"></a>
+						<a href="https://twitter.com/mhmmdbdianto" class="fab fa-twitter fa-3x icon"></a>
+					</div>
+				<footer>
+					<p>Copyright &copy; 2021 by muhammad budianto <br> design by <a href="https://www.instagram.com/devmrsa/?hl=id" target="_blank">@ramadhansaa</a></p>
+				</footer>
+				</div>
+				<div class="cover_kontak">
+					<img src="assets/contact.svg"  class="animate-right" alt="Kontak">
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		window.sr = ScrollReveal({reset:true});
+
+		sr.reveal('.animate-left',{
+			origin:'left',
+			duration:1500,
+			distance:'10rem',
+			delay:300
+		});
+		sr.reveal('.animate-right',{
+			origin:'right',
+			duration:1500,
+			distance:'20rem',
+			delay:300
+		});
+		sr.reveal('.animate-bottom',{
+			origin:'bottom',
+			duration:1500,
+			distance:'10rem',
+			delay:300
+		});
+
+	</script>
+</body>
+</html>

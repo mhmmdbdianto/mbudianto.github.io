@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-color: #FCFCFC;
+}
+
+header{
+	position: absolute;
+	display: flex;
+	width: 90%;
+	margin: 0 0 0 5%;
+	height: 10vh;
+	align-items: center;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: #008891;
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+.nav-link:hover{
+	font-weight:bold;
+	color: #1A508B;
+}
+.nav-link:hover::after{
+	content: "";
+			display: block;
+			border-bottom: 3px solid #1A508B;
+			width: 50%;
+			margin : auto;
+			padding-bottom: 5px;
+			margin-bottom: -8px;
+}
+
+.logo-container{
+	flex:2;
+}
+
+nav{
+	flex:1;
+}
+
+.logo_hobby{
+	position: absolute;
+	top: 0;
+	display: flex;
+	width: 95%;
+	justify-content:flex-end;
+}
+
+.logo_kontak{
+	position: absolute;
+	top: 0;
+	display: flex;
+	width: 90%;
+	margin: 0 0 0 5%;
+}
+/*Akhir style header*/
+/*.main-container{
+	width: 100vw;
+	height: 100vh;
+}*/
+.main-wrapper{
+	scrollbar-width:none;
+	-ms-overflow-style: none;
+}
+.container{
+	width: 300vw;
+	flex-direction: row;
+	display: flex;
+}
+
+.circle-wrapper{
+	display: flex;
+}
+
+.wrapper{
+	position: fixed;
+	z-index: 100;
+	bottom: 2rem;
+	left: 50%;
+}
+
+.circle{
+	width: 1rem;
+	height: 1rem;
+	border:0.2rem solid #fff;
+	border-radius: 50%;
+	margin:0 0.5rem;
+	transition: background-color 0.3s;
+}
+
+.circle:hover{
+	background-color:#ddd;
+}
+
+
+.container .home{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items:center;
+}
+.text-introduction{
+	margin-left: 20rem;
+	flex:2;
+}
+.text-introduction h1{
+	font-weight:700;
+	font-size:5.4rem;
+	line-height: 7rem;
+	color: #1A508B;
+}
+.text-introduction p{
+	padding-top: 3rem;
+	font-size:1.4rem;
+	line-height: 2rem;
+	width: 75%;
+	color: #5E5E5E;
+}
+.cta{
+	padding: 10px 0px 0px 0px;
+}
+
+.cta-send{
+	background:linear-gradient(270deg, #00587A 0%, rgba(0, 136, 145, 0.9) 100%);
+	width: 11rem;
+	height: 4rem;
+	border:none;
+	font-size:1.4rem;
+	border-radius: 2.5rem;
+	margin: 10px 0 0 0;
+}
+.cta-send a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color:#F6F6F6;
+}
+.cover{
+	flex:2;
+	height: 65vh;
+}
+
+.cover img{
+	width: auto;
+	height: 100%;
+}
+
+.dots{
+	position: absolute;
+	z-index: -1;
+	top: 15%;
+	left: 12%;
+	width: 7rem;
+}
+
+.wave{
+	position: absolute;
+	width: 100vw;
+	height: 40vh;
+	bottom: 0;
+	z-index: -1;
+}
+
+.container .hobby{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items:center;
+}
+
+.myhobby{
+	flex:2;
+}
+
+.myhobby img{
+	height: 100vh;
+}
+
+.text{
+	flex:1;
+	margin-left: 11rem;
+	margin-right: 19.2rem;
+	text-align: right;
+}
+
+.text h1{
+	font-size:5.4rem;
+	color: #1A508B;
+}
+
+.text div{
+	padding-top: 4rem;
+	content: "";
+	border-bottom: 1px solid #5D5D5D;
+	width: 20%;
+	margin-left: 28rem;
+}
+
+.text p{
+	padding-top: 3rem;
+	font-size:1.4rem;
+	line-height: 3rem;
+	color: #5D5D5D;
+}
+
+.blobs_1{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	left: 145%;
+	width: 20rem;
+}
+.blobs_2{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	left: 179%;
+	width: 30rem;
+}
+.blobs_3{
+	position: absolute;
+	top: 5rem;
+	z-index: -1;
+	left: 160%;
+	width: 20rem;
+}
+
+.container .kontak{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items:center;
+	background-color:#008891;
+}
+
+.text_contact{
+	padding:0 10rem;
+}
+
+.text_contact h1{
+	font-size:5.4rem;
+	font-weight:bold;
+	color: #C7FFD8;
+}
+
+.text_contact p{
+	padding-top: 5rem;
+	font-size:1.4rem;
+	line-height: 3rem;
+	color: #C7FFD8;
+	padding-bottom:2rem;
+	width: 80%;
+}
+
+.cta-contact{
+	background-color: #F6F6F6;
+	width: 12rem;
+	height: 4rem;
+	border:none;
+	font-size:1.4rem;
+	border-radius: 2.5rem;
+	margin: 10px 0 0 0;
+}
+.cta-contact a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	color:#008891;
+}
+
+.icon{
+	width: 2.4rem;
+	margin-right: 4rem;
+	margin-top: 4.5rem;
+	color: #F6F6F6;
+	text-decoration:none;
+}
+
+.cover_kontak{
+	background-color:#FCFCFC;
+	width: 60vw;
+	height: 100vh;
+}
+.cover_kontak img{
+	
+	position: absolute;
+	width: 70vw;
+	height: 100vh;
+	right: -200%;
+	object-fit: fill;
+
+}
+
+footer p{
+	position: absolute;
+	bottom: 0;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
